@@ -4,6 +4,7 @@ import { ApplicationModule } from './application/application.module';
 import { PrismaModule } from './database/prisma.module';
 import { DomainModule } from './domain/domain.module';
 import { PersistenceModule } from './persistence/persistence.module';
+import { HealthModule } from './utils/health/health.module';
 
 @Module({
   imports: [
@@ -15,6 +16,7 @@ import { PersistenceModule } from './persistence/persistence.module';
     ApplicationModule,
     PersistenceModule,
     PrismaModule,
+    HealthModule,
   ],
   controllers: [],
   providers: [],
